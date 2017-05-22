@@ -1,0 +1,17 @@
+{
+  "Html": "/Evgeniy/Corporation.html",
+  "Name": "",
+  "NewOfficeName$": "",
+  "AddNewOfficeTrigger$": 0,
+  "Offices": [
+    {
+      "Id": "",
+      "Name": "",
+      "TotalComission": 0,
+      "EditUrl": "",
+      "AverageComission": 0,
+      "Trend": 0,
+      "NumberOfHomes": 0
+    }
+  ]
+}
