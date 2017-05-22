@@ -1,0 +1,53 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+<link rel="import" href="/sys/paper-dialog/paper-dialog.html" />
+<link rel="import" href="/sys/juicy-table-repeat/juicy-table-repeat.html" />
+<template>
+    <template is="dom-bind">
+        <h3>{{model.Name}}</h3>
+        <h4>Franchise offices</h4>
+
+        <juicy-table-repeat rows="{{model.Offices}}">
+            <table class="table products-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Number of homes sold</th>
+                        <th>Total commission</th>
+                        <th>Average commission</th>
+                        <th>Trend</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <template is="dom-template" class="row-template">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="{{item.EditUrl}}">{{item.Name}}</a>
+                        </td>
+                        <td>
+                            <div>{{item.NumberOfHomes}}</div>
+                        </td>
+                        <td>
+                            <div>{{item.TotalComission}}</div>
+                        </td>
+                        <td>
+                            <div>{{item.AverageComission}}</div>
+                        </td>
+                        <td>
+                            <div>{{item.Trend}}</div>
+                        </td>
+                    </tr>
+                </table>
+            </template>
+        </juicy-table-repeat>
+        <h4>New franchise office</h4>
+        <fieldset>
+            <label>Name:</label>
+            <input value="{{model.NewOfficeName$::input}}">
+        </fieldset>
+        <button value="{{model.AddNewOfficeTrigger$::click}}" onmousedown="++this.value">Create new</button>
+
+        <hr>
+    </template>
+</template>

@@ -1,0 +1,13 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    <template is="dom-bind">
+        <h3>Register new home of sale</h3>
+        <h4>Home info</h4>
+        <div>
+            <starcounter-include partial="{{model.Address}}"></starcounter-include>
+        </div>
+        <h4>Transaction info</h4>
+        <starcounter-include partial="{{model.SalesTransaction}}"></starcounter-include>
+    </template>
+</template>

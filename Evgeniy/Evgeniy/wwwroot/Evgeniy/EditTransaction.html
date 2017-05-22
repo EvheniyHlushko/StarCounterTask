@@ -1,0 +1,29 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    <template is="dom-bind">
+      <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="control-label col-md-3 text-right">CreatedAt:</label>
+                    <div class="col-md-9">
+                        <input value="{{model.CreatedAt$::input}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 text-right">Sales price::</label>
+                    <div class="col-md-9">
+                        <input value="{{model.Price$::input}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 text-right">Comission:</label>
+                    <div class="col-md-9">
+                        <input value="{{model.Comission$::input}}">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </template>
+</template>

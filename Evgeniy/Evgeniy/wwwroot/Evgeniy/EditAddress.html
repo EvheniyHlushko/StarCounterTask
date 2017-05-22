@@ -1,0 +1,50 @@
+﻿<link rel="import" href="/sys/polymer/polymer.html">
+
+<template>
+    <template is="dom-bind">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="control-label col-md-3 text-right">Street:</label>
+                    <div class="col-md-9">
+                        <input value="{{model.Street$::input}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 text-right">Number:</label>
+                    <div class="col-md-9">
+                        <input value="{{model.Number$::input}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 text-right">Zip code:</label>
+                    <div class="col-md-9">
+                        <input value="{{model.ZipCode$::input}}">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="control-label col-md-3 text-right">City:</label>
+                    <div class="col-md-9">
+                        <input value="{{model.City$::input}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 text-right">Country:</label>
+                    <div class="col-md-9">
+                        <input value="{{model.Country$::input}}">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-3 text-right">Address:</label>
+                    <div class="col-md-9">
+                        <p>{{model.FullAddress}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>
