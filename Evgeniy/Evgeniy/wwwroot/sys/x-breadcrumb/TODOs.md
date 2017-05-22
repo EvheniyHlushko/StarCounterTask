@@ -1,3 +1,0 @@
-- [ ] orientation
-- [ ] defect fix make array passed to markup
-- [ ] make autocomplete script based(not datalist)
